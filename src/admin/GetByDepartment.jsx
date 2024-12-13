@@ -7,7 +7,7 @@ const EmployeeListByDepartment = () => {
     const [employees, setEmployees] = useState([]);
     const [error, setError] = useState("");
 
-    // Manual mapping of departments
+    
     const departments = [
         { dept_id: 1, dept_name: "HR" },
         { dept_id: 2, dept_name: "Finance" },
@@ -16,7 +16,7 @@ const EmployeeListByDepartment = () => {
         { dept_id: 5, dept_name: "Sales" },
     ];
 
-    // Fetch employees by selected department ID
+   
     const fetchEmployees = () => {
         setError("");
         if (!departmentId) {
@@ -81,7 +81,7 @@ const EmployeeListByDepartment = () => {
                 </div>
             </div>
 
-            {/* Employee List Section */}
+           
             {employees.length > 0 && (
                 <div>
                     <h3 className="text-lg font-bold mb-4">Employee List</h3>
