@@ -45,7 +45,7 @@ const CalculatePayroll = () => {
     <div className="max-w-md mx-auto p-6 bg-white shadow-lg rounded-lg">
       <h2 className="text-xl font-semibold text-gray-700 mb-4 text-center">Calculate Payroll</h2>
 
-      {/* Payroll Calculation Form */}
+     
       <form className="space-y-4">
         {/* Employee ID Input */}
         <div>
@@ -62,7 +62,7 @@ const CalculatePayroll = () => {
           />
         </div>
 
-        {/* Hours Worked Input */}
+        
         <div>
           <label htmlFor="hoursWorked" className="block text-sm font-medium text-gray-600">
             Working Hours
@@ -77,7 +77,6 @@ const CalculatePayroll = () => {
           />
         </div>
 
-        {/* Pay Date Input */}
         <div>
           <label htmlFor="payDate" className="block text-sm font-medium text-gray-600">
             Pay Date
@@ -92,7 +91,6 @@ const CalculatePayroll = () => {
           />
         </div>
 
-        {/* Submit Button */}
         <button
           type="button"
           onClick={handleCalculatePayroll}
@@ -103,7 +101,6 @@ const CalculatePayroll = () => {
         </button>
       </form>
 
-      {/* Display Payroll Data in Modal if Calculated */}
       {payrollData && (
         <div className="fixed inset-0 bg-gray-800 bg-opacity-50 flex justify-center items-center">
           <div className="bg-white p-6 rounded-lg w-96">
@@ -150,7 +147,6 @@ const CalculatePayroll = () => {
         </div>
       )}
 
-      {/* Display error message */}
       {error && <div className="flex justify-center text-red-500 mt-4 mb-4">{error}</div>}
     </div>
   );
