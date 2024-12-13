@@ -175,7 +175,7 @@ const UpdateUser = () => {
                 </div>
 
 
-                {/* Password Update Form */}
+            
                 <div>
                     <h3 className="text-xl font-semibold">Update Password</h3>
                     <div className="mt-2">
@@ -206,7 +206,7 @@ const UpdateUser = () => {
                 </div>
             </div>
 
-            {/* Error or Success Message */}
+         
             {errorMessage && <div className="mt-4 text-red-500">{errorMessage}</div>}
             {successMessage && <div className="mt-4 text-green-500">{successMessage}</div>}
         </div>
