@@ -10,7 +10,7 @@ const LeaveRequest = () => {
     const [error, setError] = useState("");
     const [confirmationMessage, setConfirmationMessage] = useState("");
 
-    // List of available leave types
+    
     const leaveTypes = [
         "Sick Leave",
         "Casual Leave",
@@ -69,7 +69,6 @@ const LeaveRequest = () => {
                     className="w-full p-3 border rounded-lg shadow-sm focus:ring focus:ring-blue-300"
                 />
 
-                {/* Leave Type Dropdown */}
                 <div>
                     <label htmlFor="leaveType" className="block text-sm font-semibold text-gray-700 mb-2">
                         Leave Type
