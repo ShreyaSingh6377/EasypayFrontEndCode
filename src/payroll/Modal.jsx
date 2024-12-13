@@ -44,7 +44,7 @@ const Modal = ({ isOpen, onClose, payrollData }) => {
     return (
         <div className="fixed inset-0 bg-gray-600 bg-opacity-50 flex justify-center items-center z-50">
             <div className="bg-white p-6 rounded-lg shadow-xl w-96 relative">
-                {/* Download Button */}
+                
                 <button
                     onClick={handleDownloadPayslip}
                     className="mt-3 absolute top-3 right-3 bg-green-500 text-white px-3 py-1 rounded-md hover:bg-green-600 transition"
