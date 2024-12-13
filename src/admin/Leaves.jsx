@@ -6,7 +6,7 @@ const LeaveManagement = () => {
     const [leaves, setLeaves] = useState([]);
     const [error, setError] = useState("");
 
-    // Fetch All Leaves
+
     const fetchAllLeaves = () => {
         setError("");
 
@@ -35,7 +35,7 @@ const LeaveManagement = () => {
             });
     };
 
-    // Handle Approve/Reject Leave Action
+    
     const handleLeaveAction = (leaveId, approved) => {
         setError("");
 
@@ -45,7 +45,7 @@ const LeaveManagement = () => {
             return;
         }
 
-        // Disable button and update status immediately
+       
         setLeaves((prevLeaves) =>
             prevLeaves.map((leave) =>
                 leave.leaveId === leaveId
@@ -73,7 +73,7 @@ const LeaveManagement = () => {
             })
             .catch(() => {
                 setError("Failed to update leave status. Please try again.");
-                // Revert status if API call fails
+                
                 setLeaves((prevLeaves) =>
                     prevLeaves.map((leave) =>
                         leave.leaveId === leaveId
@@ -88,10 +88,10 @@ const LeaveManagement = () => {
             });
     };
 
-    // Add new leave to the top of the list
+   
     const addNewLeave = (newLeave) => {
         setLeaves((prevLeaves) => {
-            // Check if the leave already exists to prevent duplication
+            
             const exists = prevLeaves.some((leave) => leave.leaveId === newLeave.leaveId);
             if (exists) return prevLeaves;
 
@@ -106,7 +106,7 @@ const LeaveManagement = () => {
     };
 
 
-    // Fetch all leaves on component mount
+    
     useEffect(() => {
         fetchAllLeaves();
     }, []);
