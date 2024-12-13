@@ -2,8 +2,8 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import Spinner from "../components/Spinner";
 import { useNavigate } from "react-router-dom";
-import { FaTrashAlt } from "react-icons/fa"; // React Icons for delete
-import { message, Modal } from "antd"; // Ant Design Modal for confirmation
+import { FaTrashAlt } from "react-icons/fa"; 
+import { message, Modal } from "antd"; 
 import Signup from "../components/Signup";
 
 const GetAllUserData = () => {
