@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import Modal from "../payroll/Modal"; // Import the modal component
-
+import Modal from "../payroll/Modal"; 
 const EmployeePayroll = () => {
     const [profileData, setProfileData] = useState(null);
     const [payrollData, setPayrollData] = useState([]);
@@ -72,10 +71,9 @@ const EmployeePayroll = () => {
                     Employee Dashboard
                 </h2>
 
-                {/* Display Error */}
+             
                 {error && <p className="text-red-500 text-center mb-4">{error}</p>}
 
-                {/* Profile Section */}
                 {profileData ? (
                     <div className="space-y-6">
                         <div className="bg-gray-50 p-4 rounded-md shadow-sm">
@@ -118,7 +116,7 @@ const EmployeePayroll = () => {
                     </div>
                 )}
 
-                {/* Modal Component */}
+                
                 {selectedPayroll && (
                     <Modal
                         isOpen={isModalOpen}
