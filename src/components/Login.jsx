@@ -51,7 +51,7 @@ const Login = () => {
 
     return (
         <>
-            {/* Navbar */}
+            
             <nav className="bg-white border-gray-200 fixed top-0 w-full bg-white shadow-md z-50">
                 <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
                     <Link to="/" className="flex items-center space-x-3 rtl:space-x-reverse">
@@ -81,7 +81,7 @@ const Login = () => {
             </nav>
 
 
-            {/* Login */}
+           
             <div className="flex flex-wrap min-h-screen w-full content-center justify-center py-10" style={{ backgroundColor: "#C0ECE4" }}>
                 {loading ? (
                     <Spinner />
