@@ -8,7 +8,7 @@ const EmployeeLeaves = () => {
     const [loading, setLoading] = useState(false);
 
     useEffect(() => {
-        // Fetch Employee's Leaves Data
+       
         const fetchLeaves = async () => {
             const token = localStorage.getItem("token");
 
@@ -18,7 +18,7 @@ const EmployeeLeaves = () => {
             }
 
             try {
-                // Fetch employee profile to get empId
+               
                 const profileRes = await axios.get("http://localhost:8080/api/emp/profile", {
                     headers: {
                         Authorization: `Bearer ${token}`,
@@ -32,7 +32,7 @@ const EmployeeLeaves = () => {
                     return;
                 }
 
-                // Fetch leaves data using the empId
+               
                 setLoading(true);
                 const leavesRes = await axios.get(`http://localhost:8080/api/emp/leaves/${empId}`, {
                     headers: {
@@ -40,11 +40,11 @@ const EmployeeLeaves = () => {
                     },
                 });
                 setLeaves(leavesRes.data);
-                setError("");  // Clear any previous error
+                setError("");  
             } catch (err) {
                 console.error("Error fetching leaves:", err);  // Log the error for debugging
                 setError("Unable to fetch leaves. Please try again.");
-                setLeaves([]);  // Clear any previous leaves data
+                setLeaves([]);  
             } finally {
                 setLoading(false);
             }
