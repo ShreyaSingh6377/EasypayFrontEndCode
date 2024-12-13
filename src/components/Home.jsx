@@ -18,10 +18,10 @@ const Home = () => {
 
     return (
         <>
-            {/* Navbar */}
+           
             <Navbar />
 
-            {/* Hero Section */}
+           
             <div className="flex flex-wrap content-center justify-center rounded-l-md bg-white p-8" style={{ backgroundColor: "#e4f9fc", minHeight: "100vh" }}>
                 <div class="items-center w-10/12 grid-cols-2 mx-auto overflow-x-hidden lg:grid md:py-14 lg:py-24 xl:py-14 lg:mt-3 xl:mt-5">
                     <div class="mt-16 pr-2 md:mb-14 py-14 md:py-0">
@@ -40,7 +40,7 @@ const Home = () => {
                 </div>
             </div>
 
-            {/* Brand names */}
+            
             <section class="bg-white mt-8 mb-16">
                 <div class="py-8 lg:py-16 mx-auto max-w-screen-xl px-4">
                     <h2 class="text-4xl font-bold text-gray-800 mb-8 text-center mb-20">Trusted By Giants</h2>
@@ -105,7 +105,7 @@ const Home = () => {
             </section>
 
 
-            {/* Our Services */}
+           
             <section className="py-10 px-24" id="services">
                 <div className="container mx-auto px-4">
                     <h2 className="text-4xl font-bold text-gray-800 mb-8 text-center mb-16">Our Services</h2>
@@ -136,7 +136,7 @@ const Home = () => {
                 </div>
             </section>
 
-            {/* About Us */}
+            
             <section className="mx-24 mt-16 rounded-2xl" id="aboutus" style={{ backgroundColor: "#eff7f8" }}>
                 <div className="container mx-auto py-16 px-4 sm:px-6 lg:px-8">
                     <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-8">
@@ -155,7 +155,7 @@ const Home = () => {
                 </div>
             </section>
 
-            {/* Why Us */}
+           
             <section class="text-gray-700 body-font mt-24 mb-16">
                 <div class="text-4xl font-bold text-gray-800 text-center">
                     Why Us?
@@ -192,7 +192,7 @@ const Home = () => {
                 </div>
             </section>
 
-            {/* Customer review */}
+            
             <section className="bg-white">
                 <div className="mx-auto max-w-screen-xl px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
                     <h4 className="text-center text-4xl font-bold tracking-tight text-gray-900 sm:text-4xl mb-16">
@@ -416,7 +416,7 @@ const Home = () => {
                 </div>
             </section>
 
-            {/* Footer */}
+         
             <footer style={{ backgroundColor: "#2C95FA" }}>
                 <div className="mx-auto max-w-screen-xl px-4 pb-8 pt-16 sm:px-6 lg:px-8 lg:pt-24">
                     <div className="text-center">
