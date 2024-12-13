@@ -38,7 +38,7 @@ const Signup = () => {
 
     return (
         <>
-            {/* Back Button */}
+        
             <div className="absolute top-5 left-5 z-50">
                 <button
                     onClick={() => nav("/admin")}
@@ -48,7 +48,7 @@ const Signup = () => {
                 </button>
             </div>
 
-            {/* Signup */}
+         
             <div className="flex flex-wrap min-h-screen w-full content-center justify-center py-10" style={{ backgroundColor: "#C0ECE4" }}>
                 {loading ? (<Spinner />) : (
                     <div className="flex shadow-xl bg-white rounded-2xl p-2">
