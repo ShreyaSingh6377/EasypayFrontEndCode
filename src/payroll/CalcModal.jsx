@@ -48,7 +48,6 @@ const PayrollCalculation = () => {
                 </button>
             </div>
 
-            {/* Modal */}
             <CalcModal
                 isOpen={isModalOpen}
                 onClose={() => setIsModalOpen(false)}
