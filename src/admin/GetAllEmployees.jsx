@@ -10,7 +10,7 @@ const GetAllEmployees = () => {
     const [error, setError] = useState(null);
     const [isModalOpen, setIsModalOpen] = useState(false);
 
-    // Departments mapping
+    
     const departments = [
         { id: 1, name: "HR" },
         { id: 2, name: "Finance" },
