@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import Modal from './Modal';  // Import the modal component
+import Modal from './Modal';  
 
 const FetchPayrollByEmployeeId = () => {
   const [employeeId, setEmployeeId] = useState('');
@@ -43,7 +43,7 @@ const FetchPayrollByEmployeeId = () => {
     <div className="p-6 max-w-2xl mx-auto bg-white shadow-md rounded-lg">
       <h2 className="text-2xl font-semibold text-gray-700 mb-4">Fetch Payroll by Employee ID</h2>
 
-      {/* Employee ID Input */}
+      
       <div className="mb-4">
         <label htmlFor="employeeId" className="block text-gray-600">Employee ID:</label>
         <input
@@ -56,7 +56,7 @@ const FetchPayrollByEmployeeId = () => {
         />
       </div>
 
-      {/* Fetch Payroll Button */}
+     
       <button
         onClick={handleFetchPayroll}
         className="w-full py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 transition"
@@ -65,10 +65,10 @@ const FetchPayrollByEmployeeId = () => {
         {loading ? 'Fetching...' : 'Fetch Payroll'}
       </button>
 
-      {/* Error Message */}
+      
       {error && <p className="text-red-500 mt-4">{error}</p>}
 
-      {/* Modal Component */}
+     
       <Modal
         isOpen={isModalOpen}
         onClose={() => setIsModalOpen(false)}  
